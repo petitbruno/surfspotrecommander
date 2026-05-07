@@ -24,10 +24,10 @@ jobs:
         pip install pyinstaller
 
     - name: Build EXE
-      run: pyinstaller --onefile ton_script.py
+      run: pyinstaller --onefile surfspotrecommander.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: exe
-        path: dist/ton_script.exe
+        path: dist/surfspotrecommander.exe
